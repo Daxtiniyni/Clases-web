@@ -1,0 +1,563 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+}
+
+:root{
+    --primary-color: #eb5757;
+    --second-color: #222;
+    --light-color: #f9f9f9;
+    --gera-color: #333;
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+    position: fixed;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+header .covid{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-color);
+    background-color: var(--second-color);
+}
+
+header .covid button{
+    width: 140px;
+    height: 35px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+header .covid p{
+    font-size: 18px;
+}
+
+header .menu{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10px; */
+    color: var(--light-color);
+}
+
+header .menu div a{
+    height: 35px;
+    width: 75px;
+    padding-top: 8px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--light-color);
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+header .menu div a:hover{
+    background-color: var(--second-color);
+}
+
+header .menu div button{
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--second-color);
+    background-image: url(cart.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    border: none;
+    position: relative;
+}
+
+header .menu div button span{
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 3px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    text-align: center;
+    color: var(--gera-color);
+    background-color: var(--light-color);
+}
+
+body{
+    font-family: Sen, sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.servicio{
+    width: 35%;
+    position: relative;
+    top: -450px;
+    left: 75px;
+    font-size: 62px;
+    line-height: 1.2;
+    color: var(--light-color);
+}
+
+.texto{
+    width: 35%;
+    position: relative;
+    top: -430px;
+    left: 75px;
+    margin-bottom: 25px;
+    color: var(--light-color);
+    font-size: 18px;
+}
+
+.trans{
+    position: relative;
+    top: -410px;
+    left: 75px;
+    width: 140px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0%);
+    color: var(--light-color);
+    border-color: var(--light-color);
+    display: inline-block;
+    padding: 9px 15px;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+.soporte{
+    width: 100vw;
+    position: relative;
+    top: -200px;
+    left: 75px;
+}
+
+.titulo{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.texto2{
+    width: 45%;
+    position: relative;
+    top: -80px;
+    left: 585px;
+    margin-bottom: 25px;
+    color: var(--gera-color);
+    font-size: 18px;
+}
+
+.art1{
+    background-color: var(--second-color);
+    height: 390px;
+    width: 350px;
+    position: relative;
+    top: -250px;
+    left: 80px;
+    border-radius: 5px;
+}
+
+.art2{
+    background-color: var(--second-color);
+    height: 390px;
+    width: 350px;
+    position: relative;
+    top: -734px;
+    left: 485px;
+    border-radius: 5px;
+}
+
+.art3{
+    background-color: var(--second-color);
+    height: 390px;
+    width: 350px;
+    position: relative;
+    top: -1221.5px;
+    left: 900px;
+    border-radius: 5px;
+}
+
+body main section div .art1 span{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    right: auto;
+    bottom: auto;
+    color: #f9f9f9;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+body main section div .art2 span{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    right: auto;
+    bottom: auto;
+    color: #f9f9f9;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+body main section div .art3 span{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    right: auto;
+    bottom: auto;
+    color: #f9f9f9;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+body main section div .art1 h3{
+    color: #f9f9f9;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 35%;
+}
+
+body main section div .art2 h3{
+    color: #f9f9f9;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 35%;
+}
+
+body main section div .art3 h3{
+    color: #f9f9f9;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 35%;
+}
+
+.text-art1{
+    width: 350px;
+    position: relative;
+    top: -195px;
+    left: 66px;
+}
+
+.text-art2{
+    width: 350px;
+    position: relative;
+    top: -682.5px;
+    left: 480px;
+}
+
+.text-art3{
+    width: 350px;
+    position: relative;
+    top: -1166.8px;
+    left: 910px;
+}
+
+.banner2{
+    position: relative;
+    top: -1065px;
+}
+
+.h2{
+    position: relative;
+    top: -600px;
+    left: 50%;
+    width: 45%;
+    color: #f9f9f9;
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.texto3{
+    position: relative;
+    top: -600px;
+    left: 60%;
+    width: 35%;
+    margin-bottom: 25px;
+    color: #f9f9f9;
+    font-size: 18px;
+    text-align: right;
+}
+
+.buton{
+    position: relative;
+    top: -600px;
+    left: 81%;
+    background-color: var(--light-color);
+    color: var(--gera-color);
+    display: inline-block;
+    padding: 9px 15px;
+    border: 0;
+    text-decoration: none;
+    border-color: #f9f9f9;
+    background-color: #f9f9f9;
+    color: #222;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.shop{
+    position: relative;
+    top: -1245px;
+    left: 75px;
+    text-transform: uppercase;
+}
+
+.h22{
+    position: relative;
+    top: -1245px;
+    left: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.div1{
+    position: relative;
+    top: -1200px;
+    left: 75px;
+    border-radius:5px;
+    border: 1px solid #999;
+    width:380px;
+    height:500px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(ac3.jpg);
+    background-size: cover;
+}
+
+.div2{
+    position: relative;
+    top: -1700px;
+    left: 480px;
+    border-radius:5px;
+    border: 1px solid #999;
+    width:380px;
+    height:500px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(wd1.png);
+    background-size: cover;
+}
+
+.div3{
+    position: relative;
+    top: -2200px;
+    left: 880px;
+    border-radius:5px;
+    border: 1px solid #999;
+    width:380px;
+    height:500px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url(ac4.jpg);
+    background-size: cover;
+    
+}
+
+.h4{
+    position: relative;
+    top: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button{
+    position: relative;
+    top: 117%;
+    left: 147px;
+    background-color: var(--primary-color);
+    color: var(--gera-color);
+    border: 0;
+    color: var(--light-color);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 9px 15px;
+}
+
+.view{
+    position: relative;
+    top: 145%;
+    left: 25px;
+    background-color: var(--second-color);
+    color: var(--gera-color);
+    border: 0;
+    color: var(--light-color);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 9px 15px;
+}
+
+.h41{
+    position: relative;
+    top: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button1{
+    position: relative;
+    top: 103%;
+    left: 147px;
+    background-color: var(--primary-color);
+    color: var(--gera-color);
+    border: 0;
+    color: var(--light-color);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 9px 15px;
+}
+
+.precio{
+    position: relative;
+    top: 101%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.precio0{
+    position: relative;
+    top: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.precio2{
+    padding: 15px;
+    color: #eb5757;
+    text-decoration: line-through;
+}
+
+.buttonsale{
+    position: relative;
+    top: 5%;
+    left: 75%;
+    background-color: var(--primary-color);
+    color: var(--gera-color);
+    border: 0;
+    color: var(--light-color);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 9px 15px;
+}
+
+.fondo{
+    position: relative;
+    top: -1750px;
+}
+
+.fondo{
+    position: relative;
+    left: 18%;
+    width: 75%;
+    height: 550px;
+    background-color: var(--second-color);
+    color: var(--light-color);
+    border-radius: 5px;
+}
+
+.contenido{
+    position: relative;
+    left: 28%;
+    top: -45%;
+    width: 65%;
+    padding-right: 145px;
+    padding-left: 145px;
+}
+
+.shoplocal{
+    margin-top: 0px;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.textcont{
+    margin-top: 0px;
+    /* font-size: 20px; */
+    line-height: 1.2;
+}
+
+.b{
+    line-height: 1.5;
+}
+
+.perfil{
+    position: relative;
+    left: -150px;
+    top: 10%;
+    height: 300px;
+    width: 300px;
+    /* background-color: #222; */
+    background-image: url(ac5.jpg);
+    background-size: cover;
+}
+
+footer{
+    width: 100vw;
+    height: 150px;
+    flex: 0 0 auto;
+    position: fixed;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+/* .fot{
+    width: 100vw;
+    height: 55vh;
+    background-color: var(--second-color);
+} */
+
+/*     background-color: rgba(0, 0, 0, 0%); <--- para poner cosas transparentes  */
